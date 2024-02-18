@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="index.js"></script>
+</head>
+<body>
+<h1>Bestilling av Kinobilletter</h1>
+
+<table>
+    <tr>
+        <td><b>Velg film</b></td>
+    <td><select id="film" style="width: 200px">
+        <option value="">--Venligst velg en film--
+        </option>
+        <option value="Anyone but you">Anyone but you</option>
+        <option value="Aquaman and the Lost Kingdom">Aquaman and the Lost Kingdom</option>
+        <option value="Bob Marley: one love">Bob Marley: one love</option>
+        <option value="Bukkene bruse på badeland">Bukkene bruse på badeland</option>
+        <option value="Konvoi">Konvoi</option>
+        <option value="Madame Web">Madame Web</option>
+        <option value="Poor Things">Poor Things</option>
+        <option value="Wanka">Wanka</option>
+    </select></td>
+        <td><p id="filmFeilmelding"></p></td>
+    </tr>
+</table><br>
+
+<table>
+    <tr>
+        <td><b>Antall</b></td>
+        <td><input type="number" id="antall" style="width: 50px"></td>
+        <td><p id="antallFeilmelding"></p></td>
+    </tr>
+</table><br>
+
+<table>
+    <tr>
+        <td><b>Fornavn</b></td>
+        <td><input type="text" id="fornavn"></td><td><p id="fornavnFeilmelding"></p></td>
+    </tr>
+    <tr>
+        <td><b>Etternavn</b></td>
+        <td><input type="text" id="etternavn"></td><td><p id="etternavnFeilmelding"></p></td>
+    </tr>
+    <tr>
+        <td><b>Telefonnr</b></td>
+        <td><input type="number" id="telefonnr"></td><td><p id="telefonnrFeilmelding"></p></td></tr>
+    </tr>
+    <tr>
+        <td><b>Epost</b></td>
+        <td><input type="text" id="epost"></td><td><p id="epostFeilmmelding"></p></td></tr>
+    </tr>
+</table>
+<button onclick="KjopBillett()">Kjøp billett</button>
+
+<h2>Alle billetter</h2>
+<div id="bestilteBilletter"></div>
+<button onclick="slettBilletter()">Slett alle billettene</button>
+</body>
+</html>
